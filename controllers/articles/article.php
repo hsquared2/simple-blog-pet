@@ -27,6 +27,11 @@ if($hasArticle) {
         'left' => $left,
         'content' => $content,
       ]);
+    } else {
+      $pageContent = template('articles/v_article', [
+        'article' => $article,
+        'catName' => $cat['name'],
+      ]);
     }
 
   } else {
