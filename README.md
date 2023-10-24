@@ -8,6 +8,10 @@ Only admin initially posesses higher privileges on the website, which gives him 
 posts made by other users. Users can modify and delete articles if they are the original authors of the article. Users with higher privileges
 also possess an ability to add new categories to the website. The project was written using procedural PHP, MySQL as a database and MVC architecture.
 
+### Special Privileges Account Details:
+Username: admin
+Password: 12345
+
 ## Configurations
 
 **DB config:**
