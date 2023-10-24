@@ -18,4 +18,4 @@ Password: 12345 <br/>
 To configure Database under your own needs, go to init.php file and adjust constants that start with 'DB_'.
 
 **Host and Base URL:**
-To configure host and base url, go to init.php file and adjust constants necessary constants.
+To configure host and base url, go to init.php file and adjust constants HOST and BASE_URL.
