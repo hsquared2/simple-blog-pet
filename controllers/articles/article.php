@@ -9,22 +9,26 @@ $hasArticle = $article !== null;
 if($hasArticle) {
   $cat = getCatById($article['id_cat']);
 
-  if($user && $user['id_user'] == $article['id_user'] || $user['privilege'] == 1) {
-    $left = template('articles/v_article_left', [
-      'article' => $article,
-      'userId' => $user['id_user'],
-    ]);
-  
-    $content = template('articles/v_article', [
-      'article' => $article,
-      'catName' => $cat['name'],
-    ]);
-  
-    $pageTitle = $article['content'];
-    $pageContent = template('base/v_con2col', [
-      'left' => $left,
-      'content' => $content,
-    ]);
+  if($user) {
+
+    if($user['privilege'] == 1 || $user['id_user'] == $article['id_user']) {
+      $left = template('articles/v_article_left', [
+        'article' => $article,
+        'userId' => $user['id_user'],
+      ]);
+    
+      $content = template('articles/v_article', [
+        'article' => $article,
+        'catName' => $cat['name'],
+      ]);
+    
+      $pageTitle = $article['content'];
+      $pageContent = template('base/v_con2col', [
+        'left' => $left,
+        'content' => $content,
+      ]);
+    }
+
   } else {
     $pageContent = template('articles/v_article', [
       'article' => $article,
