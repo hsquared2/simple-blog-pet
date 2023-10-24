@@ -9,8 +9,8 @@ posts made by other users. Users can modify and delete articles if they are the 
 also possess an ability to add new categories to the website. The project was written using procedural PHP, MySQL as a database and MVC architecture.
 
 ### Special Privileges Account Details:
-Username: admin
-Password: 12345
+Username: admin <br/>
+Password: 12345 <br/>
 
 ## Configurations
 
