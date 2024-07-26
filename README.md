@@ -19,3 +19,5 @@ To configure Database under your own needs, go to init.php file and adjust const
 
 **Host and Base URL:**
 To configure host and base url, go to init.php file and adjust constants HOST and BASE_URL.
+
+Demo website link: https://fake-blog-network.000webhostapp.com/
